@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body{
+            background-color:rgb(2, 2, 23);
+        }
+        #ss{
+            text-align: center;
+            padding-top: 2%;
+            padding-bottom:2%;
+
+        }
+        #ss img{
+            width:90%;
+            height:350px;
+        }
+
+        #movies{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:2px;
+            margin-left:2ch;
+            margin-top:5%;
+            color:white;
+            font-weight: bold;
+            text-align: center;
+        }
+        #loader{
+            height:300px;
+            display:block;
+            margin:auto;
+        }
+        #poster{
+            width:60%;
+        }
+        #basic{
+            display: block;
+        }
+        #button{
+            text-align: right;
+            margin-right:12ch;
+        }
+        #nav{
+            height:50px;
+            width:90%;
+           
+            margin:auto;
+            display:flex;
+        }
+        #nav>#first{
+            height:100%;
+            width:60%;
+            
+            display:flex;
+        }
+        #nav>#second{
+            height:100%;
+            width:40%;
+            
+            display: flex;
+        }
+        
+        #first>div{
+            height:100%;
+            width:80px;
+            
+            color:white;
+            font-weight:bold;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .one img{
+            height:90%;
+            width:100%;
+        }
+        #seven{
+            color:yellow;
+        }
+        #second>div{
+            height:100%;
+            width:80px;
+           
+            color:white;
+            font-weight:bold;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #second>#search{
+            width:300px;
+            display:flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+        #search>#search1{
+            height:100%;
+            width:70%;
+           
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #search1>input{
+            height:20px;
+            width:190px;
+        }
+        #search>#mys{
+            align-items: center;
+            
+        }
+        #search>#mys img{
+                 height:95%;
+                 width:100%;
+                 display:flex;
+                 justify-content: center;
+                 align-items: center;
+        }
+        #second>#sub{
+            width:120px;
+        }
+        #second img{
+            width:100%;
+            height:100%;
+            margin-top:2px;
+        }
+        #container{
+            width:90%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+            margin:auto;
+            color:white;
+            text-align: center;
+            font-weight: bold;
+            margin-top:5ch;
+            
+        }
+        #container img{
+            height:80%;
+            width:80%;
+        }
+        #container>img:hover{
+            height:60%;
+            width:60%;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div id="first">
+            <div class="one">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmmjchSemmep_z5uMmBpsg43YhqzkkGRSmUg&usqp=CAU">
+            </div>
+            <div class="one">
+                <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg">
+            </div>
+            <div id="three">Tv</div>
+            <div id="four">Movies</div>
+            <div id="five">Sports</div>
+            <div id="six">Disney+</div>
+            <div id="seven">KIDS</div>
+        </div>
+        <div id="second">
+
+            <div id="search">
+                <div id="search1">
+                    <input type="text" id="query" oninput="debounce(searchMovies,3000)">
+       <!----  <buttton onclick="searchMovies()"> Search</buttton>-->
+                </div>
+
+
+
+
+
+                
+
+
+                <div id="mys">search</div>
+            </div>
+            <div id="sub">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIZVIpjtfk-PCfExU9IMTmHiqkMflihVwI6A&usqp=CAU">
+            </div>
+            <div id="login">LOGIN</div>
+        </div>
+        
+    </div>
+    <div id="ss"></div>
+    
+    <!--<div id="button">
+        <button onclick="sortLH()">Rating: L to H</button>
+        <button onclick="sortHL()">Rating: H to L</button>
+    </div>-->
+    <div id="basic">
+    </div>
+
+   <div id="container">
+<!--<img  id="loader" src="https://media2.giphy.com/media/cIbJ5bBlNLxynVGYzb/200w.webp?cid=ecf05e4791lyxbaun2fgfl9794bsvw9yxbmpunduj7pzj21g&rid=200w.webp&ct=g">
+   --> 
+  
+   </div>
+
+</body>
+</html>
+<script src="./search.js"></script>
